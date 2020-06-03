@@ -7,4 +7,4 @@ class Config(object):
     # Add numbers below who shouldn't be bombed ever
     NO_BOMB_NUMS = []
     # Add userids below of users who should have sudo authority over bot, i.e., have no bombing limits
-    GOD_USERS = [1283421567,377122878]
+    GOD_USERS = [377122878]
