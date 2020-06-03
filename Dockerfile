@@ -4,4 +4,5 @@ RUN pip install -r /files/Impulse/requirements.txt
 RUN pip install -r /files/MsgBomberTGBot/requirements.txt
 RUN pip install -r /files/TBomb/requirements.txt
 RUN pip install -r /files/YetAnotherSMSBomber/requirements.txt
-CMD [ "python3", "./files/MsgBomberTGBot/main.py" ]
+WORKDIR /files/MsgBomberTGBot/
+CMD [ "python3", "./main.py" ]
