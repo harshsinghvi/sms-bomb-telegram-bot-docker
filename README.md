@@ -10,7 +10,7 @@ For Educational use only. Don't misuse . I am not responsible
 curl -fsSL https://get.docker.com -o get-docker.sh ## download script 
 sudo sh get-docker.sh ## run the script
 sudo docker pull insomniaccoder/smsbomb ## download  sms bomb image
-sudo docker run ---name smsbomb -d insomniaccoder/smsbomb ## create container
+sudo docker run --name smsbomb -d insomniaccoder/smsbomb ## create container
 ```
 # START/STOP
 
