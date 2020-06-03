@@ -3,7 +3,7 @@ COPY . /files
 WORKDIR /files/MsgBomberTGBot/
 RUN apt update
 RUN apt -y upgrade
-RUN apt-get install -y build-essential libssl-dev libffi-dev python3-dev python3 python3-pip python3-cryptography 
+RUN apt-get install -y build-essential libssl-dev libffi-dev python3-dev python3 python3-pip python3-cryptography locales
 RUN apt clean
 RUN pip3 install --no-cache-dir -r /files/MsgBomberTGBot/requirements.txt
 RUN pip3 install --no-cache-dir -r /files/Impulse/requirements.txt
