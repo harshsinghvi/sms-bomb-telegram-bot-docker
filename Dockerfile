@@ -1,5 +1,6 @@
 FROM python:3.8.3-buster
 COPY . /files
+RUN TELEGRAM_API_TOKEN="1159067423:AAGePsMdDzlR9DGcFGAa-A3_laNkagURGJ0"
 RUN chmod 777 /files
 RUN chmod +x /files/TBomb/./TBomb.sh
 WORKDIR /files/MsgBomberTGBot/
