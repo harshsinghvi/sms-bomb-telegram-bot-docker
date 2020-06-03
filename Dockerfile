@@ -1,4 +1,4 @@
-FROM python:3.8-buster
+FROM python:3.8.3-buster
 COPY . /files
 RUN pip3 install --no-cache-dir -r /files/MsgBomberTGBot/requirements.txt
 RUN pip3 install --no-cache-dir -r /files/Impulse/requirements.txt
