@@ -3,12 +3,15 @@ COPY . /files
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 RUN /bin/bash -c export TELEGRAM_API_TOKEN="1159067423:AAGePsMdDzlR9DGcFGAa-A3_laNkagURGJ0"
 =======
 >>>>>>> parent of 9442de4... auth token security
 =======
 RUN TELEGRAM_API_TOKEN="1159067423:AAGePsMdDzlR9DGcFGAa-A3_laNkagURGJ0"
 >>>>>>> parent of 347bdba... env
+=======
+>>>>>>> parent of 9442de4... auth token security
 =======
 >>>>>>> parent of 9442de4... auth token security
 RUN chmod 777 /files
