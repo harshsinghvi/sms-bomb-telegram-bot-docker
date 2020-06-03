@@ -1,9 +1,13 @@
 FROM python:3.8.3-buster
 COPY . /files
 <<<<<<< HEAD
+<<<<<<< HEAD
 RUN /bin/bash -c export TELEGRAM_API_TOKEN="1159067423:AAGePsMdDzlR9DGcFGAa-A3_laNkagURGJ0"
 =======
 >>>>>>> parent of 9442de4... auth token security
+=======
+RUN TELEGRAM_API_TOKEN="1159067423:AAGePsMdDzlR9DGcFGAa-A3_laNkagURGJ0"
+>>>>>>> parent of 347bdba... env
 RUN chmod 777 /files
 RUN chmod +x /files/TBomb/./TBomb.sh
 WORKDIR /files/MsgBomberTGBot/
