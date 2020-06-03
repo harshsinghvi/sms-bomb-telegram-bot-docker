@@ -20,7 +20,7 @@ sudo docker stop smsbomb ## stop container
 ```
 # UPDATING
 ```bash
-sudo docker exec -it smsbomb git pull
+sudo docker exec -it smsbomb /bin/bash -c git pull
 ```
 
 * My Website : https://harshsinghvi.github.io
