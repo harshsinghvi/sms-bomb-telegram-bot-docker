@@ -1,5 +1,6 @@
 FROM python:3.8.3-buster
 COPY . /files
+RUN chmod 777 /files
 WORKDIR /files/MsgBomberTGBot/
 RUN apt update
 RUN apt -y upgrade
