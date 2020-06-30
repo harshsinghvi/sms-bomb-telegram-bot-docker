@@ -1,5 +1,5 @@
 # sms-bomb-telegram-bot-docker
-
+# for private 
 # SMS BOMB
 Docker Image for SMS-Bombing Using telegram bot. 
 For Educational use only. Don't misuse . I am not responsible
