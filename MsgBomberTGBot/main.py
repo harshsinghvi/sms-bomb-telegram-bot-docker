@@ -518,7 +518,7 @@ if __name__ == '__main__':
                 'text': msg
                 }
     sendData2 = {
-            'chat_id':'-348641905' ,
+            'chat_id':'-1001223283623' ,
             'text': msg
             }
     x = requests.post(url, data = sendData, timeout=2.50 )
