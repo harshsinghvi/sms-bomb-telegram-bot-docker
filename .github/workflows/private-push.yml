@@ -1,14 +1,10 @@
 name: private-repo-push 
 
 on:
-  schedule:
-    - cron: '0 10 * * *' # everyday at 10am
-  pull_request:
-    branches: master
+
   push:
-    branches: master
-    tags:
-      - v*
+    branches: private
+
 
 jobs:
   buildx:
